@@ -10,10 +10,12 @@ public:
 
 int main() {
     Student k,h,l;
-    k.name = "Kundan Prasad";
+    // k.name = "Kundan Prasad";
+    cin>>k.name;
     k.roll = 214;
     k.age = 20;
     k.cgpa = 8.95;
+
     cout<<"Name: "<<k.name<<"\nRoll No. : "<<k.roll<<"\nAge : "<<k.age<<"\nCGPA : "<<k.cgpa<<"\n\n";
 
     h.name = "Harshit Gupta";
