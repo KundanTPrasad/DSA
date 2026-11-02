@@ -13,23 +13,12 @@ public:
 void display(Node* a){
     Node* temp = a;
     while(temp!=NULL){
-        cout<<temp->val<<" ";     // display 1 raw
+        cout<<"("<<temp->val<<")->";     // display 1 raw
         temp = temp->next;
     }
+    cout<<"(X)";
 }
-void display1(Node* a){
-    Node* tem = a;
-    while(1){
-        if(tem!=NULL) {
-            cout<<"("<<tem->val<<")->";
-            tem = tem->next;
-        }                           // display with khubshurat
-        else {
-            cout<<"(X)";
-            break;
-        }
-    }
-}
+
 int main() {
     Node* a=new Node(10);
     Node* b=new Node(20);
@@ -41,7 +30,5 @@ int main() {
     c->next=d;
     d->next=e;
     display(a);
-    cout<<endl;
-    display1(a);
     return 0;
 }
