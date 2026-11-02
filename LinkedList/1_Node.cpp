@@ -20,9 +20,10 @@ void display(Node* a){
 void display1(Node* a){
     Node* tem = a;
     while(1){
-        if(tem!=NULL) {cout<<"("<<tem->val<<")->";
-        tem = tem->next;
-        }                           // display with khubshurti
+        if(tem!=NULL) {
+            cout<<"("<<tem->val<<")->";
+            tem = tem->next;
+        }                           // display with khubshurat
         else {
             cout<<"(X)";
             break;
