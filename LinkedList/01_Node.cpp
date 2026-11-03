@@ -17,6 +17,16 @@ void display(Node* a){
         temp = temp->next;
     }
     cout<<"(X)";
+    cout<<endl;
+}
+int size(Node* head){
+    Node* temp = head;
+    int x = 0;
+    while(temp!=NULL){
+        x++;
+        temp = temp->next;
+    }
+    return x;
 }
 
 int main() {
@@ -30,5 +40,6 @@ int main() {
     c->next=d;
     d->next=e;
     display(a);
+    cout<<"Size: "<<size(a);
     return 0;
 }
